@@ -1,31 +1,73 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d12"><title>ТВОЙ ПОКЕР. ВСЕГДА С ТОБОЙ.</title>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08110f">
+<meta name="description" content="ТВОЙ ПОКЕР. ВСЕГДА С ТОБОЙ.">
+<title>ТВОЙ ПОКЕР. ВСЕГДА С ТОБОЙ.</title>
 <style>
-:root{--bg:#080d12;--ivory:#f4efe5;--muted:#b7c0c4;--green:#12b895;--felt:#103b32}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 42%,#123b3c 0,transparent 35%),radial-gradient(ellipse at 18% 10%,#152b43 0,transparent 30%),var(--bg);color:var(--ivory);font-family:Inter,Arial,sans-serif}.page{min-height:100svh;overflow:hidden;position:relative}.page:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
-header{height:72px;border-bottom:1px solid #ffffff16;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,72px);position:relative;z-index:1}.brand{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.24em;font-weight:800}.mark{width:9px;height:9px;border:1px solid #6be1c2;transform:rotate(45deg)}.edition{font-size:10px;letter-spacing:.2em;color:#83939b}
-main{max-width:1440px;min-height:calc(100svh - 120px);margin:auto;padding:40px clamp(22px,5vw,72px);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:24px;position:relative;z-index:1}.copy{max-width:590px;position:relative;z-index:2}.kicker{font-size:10px;letter-spacing:.25em;color:#9aa9af;margin-bottom:25px;display:flex;align-items:center;gap:12px}.kicker:before{content:"";width:26px;height:1px;background:var(--green)}h1{font-size:clamp(44px,5.7vw,80px);line-height:.94;letter-spacing:-.065em;margin:0 0 24px;font-weight:800}h1 span{display:block}.sub{font-size:clamp(17px,1.7vw,22px);line-height:1.45;color:#c6d0d2;margin:0 0 34px}.benefits{list-style:none;padding:0;margin:0 0 36px;display:grid;gap:16px}.benefits li{display:flex;align-items:center;gap:13px;font-size:clamp(14px,1.2vw,16px);color:#e5e8e6}.tick{width:17px;height:17px;border:1px solid #1caa8c;border-radius:50%;display:grid;place-items:center;color:#52d9b7;font-size:10px;flex:none}.cta{display:inline-flex;align-items:center;justify-content:space-between;gap:34px;min-height:58px;padding:0 24px;background:linear-gradient(135deg,#12a88c,#086c5d);border:1px solid #52d9b777;border-radius:4px;color:#fff;text-decoration:none;font-size:13px;font-weight:800;letter-spacing:.07em;box-shadow:0 12px 34px #007d651c;transition:transform .2s}.cta:hover{transform:translateY(-2px)}.arrow{font-size:22px}
-.visual{height:min(68vw,650px);min-height:410px;position:relative;display:grid;place-items:center;perspective:900px}.glow{position:absolute;width:90%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#12614e55,transparent 68%)}.table{position:absolute;width:min(48vw,570px);height:min(48vw,570px);min-width:390px;min-height:390px;border-radius:50%;transform:rotateX(61deg) rotateZ(-23deg);background:radial-gradient(ellipse at 48% 42%,#1a5444,#0a251f 69%);border:12px solid #151e22;box-shadow:0 0 0 2px #536068,0 32px 0 #06090c,0 52px 65px #0009,inset 0 0 0 2px #d8e6df24,inset 0 0 40px #0008}.table:before{content:"";position:absolute;inset:17px;border:1px solid #d6e5dc25;border-radius:50%}.table:after{content:"";position:absolute;inset:32px;border:1px solid #d6e5dc12;border-radius:50%}
-.card{position:absolute;width:clamp(115px,14vw,166px);height:clamp(165px,20vw,235px);background:linear-gradient(145deg,#fffaf0,#e6ddcd);border-radius:8px;border:1px solid white;box-shadow:0 22px 40px #0008,inset 0 0 0 3px #fff7;padding:14px;color:#11191b;z-index:2;font-family:Georgia,serif}.rank{font-size:31px;font-weight:bold;line-height:1}.suit{font-size:27px}.center{position:absolute;inset:0;display:grid;place-items:center;font-size:90px}.bottom{position:absolute;bottom:12px;right:13px;transform:rotate(180deg)}.red{color:#8f2938}.c1{transform:translate(-42px,-48px) rotate(-13deg)}.c2{transform:translate(78px,-20px) rotate(10deg);z-index:1}.chip{position:absolute;width:80px;height:80px;border-radius:50%;background:repeating-conic-gradient(#11191d 0 12deg,#bdc8c7 12deg 20deg,#11191d 20deg 30deg);box-shadow:0 15px 25px #0009,inset 0 0 0 6px #182126,inset 0 0 0 8px #d6dfdb55;z-index:3}.chip:before{content:"";position:absolute;inset:18px;border-radius:50%;background:radial-gradient(circle at 35% 25%,#344047,#0b1115 75%);border:1px solid #d9e2dd55}.chip:after{content:"";position:absolute;inset:25px;border-radius:50%;border:1px dashed #dce4df55}.ch1{right:15%;bottom:18%;transform:rotate(-12deg)}.ch2{right:4%;bottom:26%;width:62px;height:62px}.ch3{left:11%;bottom:10%;width:54px;height:54px}.light{position:absolute;right:6%;top:10%;height:72%;width:2px;background:linear-gradient(transparent,#317db8aa,#d7e8f1aa,transparent);transform:rotate(18deg)}
-footer{display:flex;justify-content:space-between;padding:0 clamp(22px,5vw,72px) 20px;color:#718087;font-size:9px;letter-spacing:.12em;position:relative;z-index:1}
-@media(max-width:820px){header{height:62px}.edition{display:none}main{grid-template-columns:1fr;padding-top:38px;padding-bottom:10px;gap:0}.copy{max-width:620px;margin:auto;width:100%}h1{font-size:clamp(46px,10.5vw,72px)}.sub{margin-bottom:26px}.benefits{gap:12px;margin-bottom:27px}.cta{width:100%}.visual{height:350px;min-height:330px;margin-top:0}.table{width:min(82vw,440px);height:min(82vw,440px);min-width:290px;min-height:290px}.card{width:clamp(104px,27vw,145px);height:clamp(150px,39vw,210px)}.c1{transform:translate(-32px,-32px) rotate(-13deg)}.c2{transform:translate(45px,-16px) rotate(10deg)}.ch1{right:18%;bottom:14%;width:68px;height:68px}.ch2{right:7%;bottom:21%;width:52px;height:52px}.ch3{left:14%;bottom:8%;width:48px;height:48px}footer{font-size:8px}}
-@media(max-width:420px){main{padding-left:22px;padding-right:22px}h1{font-size:44px}.kicker{margin-bottom:20px}.sub{font-size:16px}.visual{height:300px;min-height:300px}.table{min-width:270px;min-height:270px}}
+:root{color-scheme:dark;--bg:#08110f;--text:#f4f3ed;--muted:#c2cbc5;--green:#087d63;--line:#ffffff20}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--bg)}
+body{margin:0;min-height:100vh;min-height:100svh;background:radial-gradient(ellipse at 78% 50%,#123c302e 0,transparent 48%),var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+.page{min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+main{width:100%;max-width:1200px;margin:0 auto;padding:clamp(28px,7vw,88px);display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.55fr);align-items:center;gap:clamp(28px,6vw,80px)}
+.copy{max-width:650px}
+h1{margin:0 0 24px;font-size:clamp(42px,6.2vw,76px);line-height:.99;letter-spacing:-.055em;font-weight:750}
+h1 span{display:block}
+.subtitle{margin:0 0 30px;color:var(--muted);font-size:clamp(17px,1.8vw,21px);line-height:1.5}
+.benefits{list-style:none;padding:0;margin:0 0 36px;display:grid;gap:15px}
+.benefits li{display:flex;align-items:flex-start;gap:12px;font-size:16px;line-height:1.45}
+.check{flex:0 0 17px;width:17px;height:17px;margin-top:2px;border:1px solid #30b995;border-radius:50%;position:relative}
+.check:after{content:"";position:absolute;width:6px;height:3px;left:4px;top:5px;border-left:1.5px solid #65e0bd;border-bottom:1.5px solid #65e0bd;transform:rotate(-45deg)}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(100%,360px);min-height:58px;padding:0 22px;background:var(--green);border:1px solid #31b795;border-radius:4px;color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:.035em;transition:background-color .15s ease}
+.cta:hover,.cta:focus-visible{background:#099574}
+.arrow{font-size:22px;line-height:1}
+.ambient{height:min(42vw,390px);min-height:220px;position:relative;display:grid;place-items:center;pointer-events:none}
+.ambient:before{content:"";width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at center,#164e3d 0,#103529 28%,#0b201a 53%,transparent 72%);opacity:.8}
+.ambient:after{content:"";position:absolute;width:74%;height:1px;background:linear-gradient(90deg,transparent,#4a9c80a0,transparent);transform:rotate(-34deg)}
+@media(max-width:700px){
+ .page{align-items:flex-start}
+ main{grid-template-columns:minmax(0,1fr);gap:0;padding:clamp(28px,8vw,48px) 24px 30px}
+ h1{font-size:clamp(39px,10.3vw,60px);line-height:1.01;margin-bottom:20px}
+ .subtitle{font-size:17px;margin-bottom:25px}
+ .benefits{gap:13px;margin-bottom:28px}
+ .benefits li{font-size:15px}
+ .cta{width:100%;min-height:56px}
+ .ambient{height:clamp(110px,32vw,190px);min-height:110px;margin-top:14px}
+ .ambient:before{width:min(55vw,190px)}
+}
+@media(max-width:360px){
+ main{padding-left:19px;padding-right:19px}
+ h1{font-size:37px}
+}
+@media(prefers-reduced-motion:reduce){.cta{transition:none}}
 </style>
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','1399310622039113');fbq('track','PageView');
-</script></head><body><div class="page">
-<header><div class="brand"><span class="mark"></span><span>POKER</span></div><div class="edition">ONLINE · MOBILE EXPERIENCE</div></header>
-<main><section class="copy"><div class="kicker">ONLINE POKER</div>
+</script>
+</head>
+<body>
+<div class="page">
+<main>
+<section class="copy">
 <h1><span>ТВОЙ ПОКЕР.</span><span>ВСЕГДА С ТОБОЙ.</span></h1>
-<p class="sub">Игра в удобном для тебя ритме.</p>
-<ul class="benefits"><li><span class="tick">✓</span><span>Удобный мобильный интерфейс</span></li><li><span class="tick">✓</span><span>Игра на разных устройствах</span></li><li><span class="tick">✓</span><span>Разнообразие покерных форматов</span></li></ul>
-<a class="cta" id="telegram-cta" href="https://t.me/+dm8CamG_BfljODEy" target="_blank" rel="noopener noreferrer"><span>ВОЙТИ В ИГРУ</span><span class="arrow">→</span></a>
-</section><section class="visual" aria-hidden="true"><div class="glow"></div><div class="light"></div><div class="table"></div>
-<div class="card c1"><div class="rank">A</div><div class="suit">♠</div><div class="center">♠</div><div class="bottom"><div class="rank">A</div><div class="suit">♠</div></div></div>
-<div class="card c2"><div class="rank red">K</div><div class="suit red">♥</div><div class="center red">♥</div><div class="bottom"><div class="rank red">K</div><div class="suit red">♥</div></div></div>
-<div class="chip ch1"></div><div class="chip ch2"></div><div class="chip ch3"></div></section></main>
-<footer><span>ТВОЙ ПОКЕР. ВСЕГДА С ТОБОЙ.</span><span></span></footer></div>
+<p class="subtitle">Игра в удобном для тебя ритме.</p>
+<ul class="benefits">
+<li><span class="check" aria-hidden="true"></span><span>Удобный мобильный интерфейс</span></li>
+<li><span class="check" aria-hidden="true"></span><span>Игра на разных устройствах</span></li>
+<li><span class="check" aria-hidden="true"></span><span>Разнообразие покерных форматов</span></li>
+</ul>
+<a class="cta" id="telegram-cta" href="https://t.me/+dm8CamG_BfljODEy" target="_blank" rel="noopener noreferrer"><span>ВОЙТИ В ИГРУ</span><span class="arrow" aria-hidden="true">→</span></a>
+</section>
+<div class="ambient" aria-hidden="true"></div>
+</main>
+</div>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1399310622039113&ev=PageView&noscript=1" alt=""></noscript>
-<script>document.getElementById('telegram-cta').addEventListener('click',function(){if(typeof window.fbq==='function'){window.fbq('trackCustom','TelegramCTA',{destination:'telegram'});}});</script>
-</body></html>
+<script>
+document.getElementById('telegram-cta').addEventListener('click',function(){if(typeof window.fbq==='function'){window.fbq('trackCustom','TelegramCTA',{destination:'telegram'});}});
+</script>
+</body>
+</html>
